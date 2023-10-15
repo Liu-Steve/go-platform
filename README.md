@@ -27,4 +27,4 @@
 [部署脚本 new-go-server](./script/new-go-server.py) 在 Maven 打包镜像完成后运行本脚本，即正常在本机运行起项目
 
 [静态资源更新脚本 copy-static](./script/copy-static.py) 在 ui
-项目发生更新，导致 `npm run build` 打包产物 dist 文件夹发生变化后，运行本脚本即可更新 server 项目的静态文件
+项目发生更新，导致 `npm run build` 打包产物 dist 文件夹发生变化后，运行本脚本即可重新打包并更新 server 项目的静态文件
