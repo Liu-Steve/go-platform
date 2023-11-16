@@ -14,7 +14,7 @@ print(f"当前局域网IPv4地址: {ip}")
 os.system("docker stop katago")
 os.system("docker rm katago")
 os.system("docker rmi $(docker images | grep 'none' | awk '{print $3}')")
-os.system(f"docker run -p 8083:8083 --env JASYPT_PASSWORD=$JASYPT_PASSWORD \
+os.system(f"docker run -p 8082:8083 --env JASYPT_PASSWORD=$JASYPT_PASSWORD \
 --env MYSQL_IP={ip} --name katago --restart=always -d liusteve/go-platform-katago:latest")
 
 print('Done.')
