@@ -14,7 +14,7 @@ print(f"当前局域网IPv4地址: {ip}")
 os.system("docker stop go-server")
 os.system("docker rm go-server")
 os.system("docker rmi $(docker images | grep 'none' | awk '{print $3}')")
-os.system(f"docker run -p 8080:8084 --env JASYPT_PASSWORD=$JASYPT_PASSWORD \
+os.system(f"docker run -p 8080:8084 -p 8280:8280 --env JASYPT_PASSWORD=$JASYPT_PASSWORD \
 --env MYSQL_IP={ip} --name go-server --restart=always -d liusteve/go-platform-server:latest")
 
 print('Done.')
