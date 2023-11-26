@@ -16,6 +16,8 @@
 
 第二轮迭代 [阶段报告](./阶段报告2.md)
 
+第三轮迭代 [阶段报告](./阶段报告3.md)
+
 ## 本项目使用的开发框架
 
 前端使用 Vue3 与 Element Plus 框架开发
@@ -26,7 +28,9 @@
 
 ## 运维脚本介绍
 
-[部署脚本 new-go-server](./script/new-go-server.py) 在 Maven 打包镜像完成后运行本脚本，即正常在本机运行起项目
+[部署脚本 new-go-server](./script/new-go-server.py) 在 Maven 打包 go-server 镜像完成后运行本脚本，即正常在本机运行起项目
+
+[部署脚本 new-katago](./script/new-katago.py) 在 Maven 打包 katago 镜像完成后运行本脚本，即正常在本机运行起项目
 
 [静态资源更新脚本 copy-static](./script/copy-static.py) 在 ui
 项目发生更新，导致 `npm run build` 打包产物 dist 文件夹发生变化后，运行本脚本即可重新打包并更新 server 项目的静态文件
